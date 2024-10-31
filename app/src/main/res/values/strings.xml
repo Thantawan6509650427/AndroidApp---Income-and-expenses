@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="app_title">Pocket</string>
+    <string name="user_icon">User Icon</string>
+    <string name="star_icon">Star Icon</string>
+    <string name="search_hint">Search...</string>
+    <string name="calendar_icon">Calendar Icon</string>
+    <string name="history_title">History</string>
+    <string name="add_button">Add Button</string>
+    <string name="conclusion">Conclusion</string>
+</resources>
