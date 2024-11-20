@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <!-- Title and Menu Icons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- User Icon -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_user"
+            android:contentDescription="@string/user_icon" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/app_title"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:textColor="@color/black" />
+
+        <!-- Star Icon -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_star"
+            android:contentDescription="@string/star_icon" />
+    </LinearLayout>
+
+    <!-- Search and Date Picker -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Search Bar -->
+        <EditText
+            android:layout_width="324dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_background"
+            android:hint="@string/search_hint"
+            android:inputType="text"
+            android:padding="8dp" />
+
+        <!-- Calendar Icon -->
+        <ImageView
+            android:layout_width="37dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/calendar_icon"
+            android:src="@drawable/ic_calendar" />
+    </LinearLayout>
+
+    <!-- Calendar View -->
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/calendar_background" />
+
+    <!-- History Section -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/history_title"
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:textColor="@color/black" />
+
+
+
+    <!-- Conclusion Button -->
+    <Button
+        android:id="@+id/conclusion_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:text="Conclusion"
+        android:layout_margin="16dp" />
+
+    <!-- Floating Action Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add"
+        android:contentDescription="@string/add_button" />
+
+</LinearLayout>
